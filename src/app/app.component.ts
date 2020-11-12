@@ -1,4 +1,7 @@
+import { Observable } from 'rxjs';
 import { Component } from '@angular/core';
+import { Product } from 'src/models/product';
+import { ProductService } from './product.service';
 
 @Component({
   selector: 'app-root',
@@ -6,9 +9,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  products: Product[]
 
-  constructor() { 
+  constructor(public productService: ProductService) { 
+    this.getProducts()
   }
 
-
+  getProducts(){
+  this.productService.getProducts().subscribe( p => {
+      this.products = p
+    })
+  }
 }

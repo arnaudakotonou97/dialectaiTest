@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+
+:host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 8px 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .btn{
+    border-radius: 5px;
+    border: none;
+    // font-weight: 600;
+    font-size: medium;
+    color:  #449aef;
+    width: auto;
+    min-height: 30px;
+    margin: 5px 10px;
+    padding: 0 1rem;
+    border: 2px solid #449aef;
+    background-color: unset;
+ }
+
+ .btn-danger{
+    color: #e63535;
+    border: 2px solid #e63535;
+ }
