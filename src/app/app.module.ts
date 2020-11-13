@@ -4,15 +4,17 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ProductComponent } from './product/product.component';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { ProductsDataService } from './products-data.service';
+import { ProductListComponent } from './product-list/product-list.component';
+import { CreateProductComponent } from './create-product/create-product.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductComponent,
+    ProductListComponent,
+    CreateProductComponent,
   ],
   imports: [
     BrowserModule,

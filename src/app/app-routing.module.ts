@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router'; // CLI imports router
+import { CreateProductComponent } from './create-product/create-product.component';
+import { ProductListComponent } from './product-list/product-list.component';
 
-const routes: Routes = []; // sets up routes constant where you define your routes
+const routes: Routes = [
+  { path: '', component: ProductListComponent },
+  { path: 'create-product', component: CreateProductComponent },
+  { path: 'product-list', component: ProductListComponent },
+]
 
 // configures NgModule imports and exports
 @NgModule({

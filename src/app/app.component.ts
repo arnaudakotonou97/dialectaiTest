@@ -1,5 +1,5 @@
 import { Observable } from 'rxjs';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Product } from 'src/models/product';
 import { ProductService } from './product.service';
 
@@ -8,10 +8,14 @@ import { ProductService } from './product.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   products: Product[]
 
   constructor(public productService: ProductService) { 
+   
+  }
+
+  ngOnInit(): void {
     this.getProducts()
   }
 

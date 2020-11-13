@@ -1,0 +1,18 @@
+<div class="prods-wrapper">
+    <div class="prod-wrapper"  *ngFor="let prod of products">
+      <div class="img-wrapper">
+          <img class="img-fluid prod-img" src="{{prod.imageUrl}}" onerror="this.src='assets/imgnotfound.png'">
+      </div>
+      <div class="prod-attributes">
+          <h2>{{prod.productName}}</h2>
+          <h2>{{prod.price}} $</h2>
+          <div class="inline-wrapper">
+              <!-- <button class="btn-outline">
+                <a [routerLink]="['/product-detail', prod ]" routerLinkActive="active">Détails</a>
+              </button> -->
+              <button class="btn-outline" (click)="goToDetail(prod.id)">Détails</button>
+              <button class="btn-outline btn-danger" (click)="deleteProduct(prod.id)">Supprimer</button>
+          </div>
+      </div>
+    </div>
+  </div>
