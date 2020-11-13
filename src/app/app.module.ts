@@ -8,6 +8,7 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { ProductsDataService } from './products-data.service';
 import { ProductListComponent } from './product-list/product-list.component';
 import { CreateProductComponent } from './create-product/create-product.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { CreateProductComponent } from './create-product/create-product.componen
     AppComponent,
     ProductListComponent,
     CreateProductComponent,
+    ProductDetailComponent,
   ],
   imports: [
     BrowserModule,

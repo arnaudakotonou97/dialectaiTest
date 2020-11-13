@@ -1,0 +1,16 @@
+<div class="prods-wrapper prod-details">
+    <div class="back">
+        <button class="btn btn-standard">
+            <a routerLink="/product-list" routerLinkActive="active">retour</a>
+        </button>
+    </div>
+    <img src="{{product.imageUrl}}">
+    <h1>{{product.productName}}</h1>
+    <h2>{{product.price}} $</h2>
+    <p>{{product.description}}</p>
+    <div>
+        <span style="margin: 6px;">{{product.starRating}}</span>
+        <span class="fa fa-star checked"></span>
+    </div>
+</div>
+

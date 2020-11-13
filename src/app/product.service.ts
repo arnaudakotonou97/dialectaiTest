@@ -21,6 +21,15 @@ export class ProductService {
       );
   }
 
+  getProduct(id: number): Observable<Product> {
+    const url = `${this.productsUrl}/${id}`;
+    return this.http.get<Product>(url)
+      .pipe(
+        tap(data => console.log('getProduct: ' + JSON.stringify(data))),
+        catchError(this.handleError)
+      );
+  }
+
   deleteProduct(id: number): Observable<{}> {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
     const url = `${this.productsUrl}/${id}`;
