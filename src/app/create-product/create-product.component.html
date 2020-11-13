@@ -1,1 +1,19 @@
-<p>create-product works!</p>
+<div class="form-wrapper">
+    <form #myform="ngForm">
+      <div class="form-group ">
+          <input type="text"  class="form-control" name="productName" [(ngModel)]="product.productName"  placeholder="Nom du produit">
+      </div>
+      <div class="form-group ">
+          <input type="number" class="form-control" name="price" [(ngModel)]="product.price" placeholder="10">
+      </div>
+      <div class="form-group ">
+          <input type="textearea" class="form-control" name="description" [(ngModel)]="product.description" placeholder="Description du produit">
+      </div>
+      <div class="form-group">
+          <input type="number" class="form-control" name="starRating" min="0" max="5" [(ngModel)]="product.starRating" step="0.5" value="5">
+      </div>
+      <div class=" text-center" >
+          <button type="submit" class="btn" (click)='addProduct()'>Ajouter</button>
+      </div>
+   </form>
+  </div>

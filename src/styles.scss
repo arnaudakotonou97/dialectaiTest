@@ -22,7 +22,7 @@
     margin: 0;
   }
 
-  .prods-wrapper{
+  .prods-wrapper,.form-wrapper{
     background-color: #24292e;
     color: white;
     padding: 0.1rem 0.1rem;
@@ -79,4 +79,29 @@ a {
     a{
         color: #fff !important;
     }
+}
+
+// form styles
+
+.form-wrapper{
+    text-align: center;
+    width: 26rem;
+    margin-top: 4rem;
+    padding: 2rem 0;
+}
+
+.form-control {
+    display: inline-block;
+    width: auto;
+    height: calc(1.2rem + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: none;
+    border-radius: .4rem;
+    margin: 12px 0;
 }
